@@ -1,4 +1,4 @@
-import { Fraunces, Manrope, IBM_Plex_Mono } from "next/font/google";
+import { Playfair_Display, Manrope, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import ScrollProgress from "@/components/ScrollProgress";
 import Nav from "@/components/Nav";
@@ -7,11 +7,10 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 import StickyApplyBar from "@/components/StickyApplyBar";
 import PageTransition from "@/components/PageTransition";
 
-const fraunces = Fraunces({
+const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: "variable",
   style: ["normal", "italic"],
-  axes: ["opsz", "SOFT", "WONK"],
   variable: "--font-display",
   display: "swap",
 });
@@ -38,7 +37,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" className={`${fraunces.variable} ${manrope.variable} ${plexMono.variable}`}>
+    <html lang="es" className={`${playfair.variable} ${manrope.variable} ${plexMono.variable}`}>
       <body className="min-h-screen w-full">
         <ScrollProgress />
         <Nav />
