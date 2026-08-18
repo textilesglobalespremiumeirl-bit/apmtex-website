@@ -9,8 +9,9 @@ import PageTransition from "@/components/PageTransition";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: ["300", "500", "600"],
+  weight: "variable",
   style: ["normal", "italic"],
+  axes: ["opsz", "SOFT", "WONK"],
   variable: "--font-display",
   display: "swap",
 });
